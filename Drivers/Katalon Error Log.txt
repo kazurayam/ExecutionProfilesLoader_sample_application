@@ -1,0 +1,260 @@
+!SESSION 2021-07-07 15:22:35.011 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_282
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-07-07 15:22:40.293
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-07-07 15:22:51.732
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\SvcD_IA_DenHVS'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.filebuffers 4 0 2021-07-07 15:22:53.629
+!MESSAGE The content type with id "org.eclipse.buildship.core.files.gradlebuildscript" specified in the extension point does not exist.
+
+!ENTRY org.eclipse.core.filebuffers 4 0 2021-07-07 15:22:53.629
+!MESSAGE The content type with id "org.eclipse.buildship.core.files.gradlebuildscript" specified in the extension point does not exist.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2021-07-07 15:23:00.360
+!MESSAGE 
+!STACK 0
+com.kms.katalon.core.webservice.exception.SendRequestException: javax.net.ssl.SSLException: Connection reset
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:154)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:92)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:83)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:79)
+	at com.kms.katalon.composer.parts.WelcomePart2.checkAndShowCreativeStartPage(WelcomePart2.java:227)
+	at com.kms.katalon.composer.parts.WelcomePart2.lambda$2(WelcomePart2.java:217)
+	at com.kms.katalon.core.util.TimeUtil$2.run(TimeUtil.java:46)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: javax.net.ssl.SSLException: Connection reset
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:348)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:291)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:286)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:142)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1202)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1111)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:398)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:370)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:126)
+	... 8 more
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at sun.security.ssl.TransportContext.fatal(TransportContext.java:379)
+		... 27 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:476)
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:470)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 24 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2021-07-07 15:23:02.553
+!MESSAGE 
+!STACK 0
+com.kms.katalon.core.webservice.exception.SendRequestException: javax.net.ssl.SSLException: Connection reset
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:154)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:92)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:83)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.fetch(KatalonContentHandler.java:82)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.fetch(KatalonContentHandler.java:76)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.fetch(KatalonContentHandler.java:72)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.customHandle(KatalonContentHandler.java:47)
+	at com.kms.katalon.webserver.CustomHttpHandler.handle(CustomHttpHandler.java:14)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.net.ssl.SSLException: Connection reset
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:348)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:291)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:286)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:142)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1202)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1111)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:398)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:370)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:126)
+	... 16 more
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at sun.security.ssl.TransportContext.fatal(TransportContext.java:379)
+		... 35 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:476)
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:470)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 32 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2021-07-07 15:23:02.564
+!MESSAGE 
+!STACK 0
+com.kms.katalon.core.webservice.exception.SendRequestException: javax.net.ssl.SSLException: Connection reset
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:154)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:92)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:83)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.fetch(KatalonContentHandler.java:82)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.fetch(KatalonContentHandler.java:76)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.fetch(KatalonContentHandler.java:72)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.customHandle(KatalonContentHandler.java:47)
+	at com.kms.katalon.webserver.CustomHttpHandler.handle(CustomHttpHandler.java:14)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.net.ssl.SSLException: Connection reset
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:348)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:291)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:286)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:142)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1202)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1111)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:398)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:370)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:126)
+	... 16 more
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at sun.security.ssl.TransportContext.fatal(TransportContext.java:379)
+		... 35 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:476)
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:470)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 32 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2021-07-07 15:23:02.567
+!MESSAGE 
+!STACK 0
+com.kms.katalon.core.webservice.exception.SendRequestException: javax.net.ssl.SSLException: Connection reset
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:154)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:92)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:83)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.fetch(KatalonContentHandler.java:82)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.fetch(KatalonContentHandler.java:76)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.fetch(KatalonContentHandler.java:72)
+	at com.kms.katalon.webserver.handlers.KatalonContentHandler.customHandle(KatalonContentHandler.java:47)
+	at com.kms.katalon.webserver.CustomHttpHandler.handle(CustomHttpHandler.java:14)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.net.ssl.SSLException: Connection reset
+	at sun.security.ssl.Alert.createSSLException(Alert.java:127)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:348)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:291)
+	at sun.security.ssl.TransportContext.fatal(TransportContext.java:286)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:142)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1202)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1111)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:398)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:370)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:436)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:384)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at com.kms.katalon.core.webservice.common.HttpUtil.sendRequest(HttpUtil.java:126)
+	... 16 more
+	Suppressed: java.net.SocketException: Connection reset by peer: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at sun.security.ssl.SSLSocketOutputRecord.encodeAlert(SSLSocketOutputRecord.java:81)
+		at sun.security.ssl.TransportContext.fatal(TransportContext.java:379)
+		... 35 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:476)
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:470)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:160)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:110)
+	... 32 more
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-07-07 15:23:18.144
+!MESSAGE Reloading plugins.
+
+!ENTRY org.eclipse.e4.ui.workbench 1 0 2021-07-07 15:23:24.031
+!MESSAGE Reloaded plugins successfully.
